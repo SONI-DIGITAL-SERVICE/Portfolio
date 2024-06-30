@@ -1,7 +1,7 @@
 
 const projectsListe = document.querySelectorAll("aside li")
 let article = document.querySelector("article")
-const listeLink = document.querySelectorAll("li a")
+const listeLink = document.querySelectorAll("li .link")
 const main = document.querySelector("main")
 
 function blockLink(){
