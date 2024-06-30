@@ -1,10 +1,13 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
-body{
+body {
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -14,55 +17,58 @@ body{
     background-size: cover;
 }
 
-main{
+main {
     width: 70vw;
     height: 80vh;
     background-color: rgba(255, 255, 255, 0.3);
     padding: 3%;
     border-radius: 20px;
-    border:none;
-    box-shadow: 1px 1px 1px 3px;
+    border: none;
+    box-shadow:;
 }
 
-main.rotate{
-    transition:transform 0.7s;
-    transform:rotateY(360deg);
+main.rotate {
+    transition: transform 0.7s;
+    transform: rotateY(360deg);
 }
 
-nav{
+nav {
     width: 65vw;
     display: flex;
     justify-content: space-between;
     position: absolute;
     /* top:-35px; */
     /* margin-bottom: 50px; */
-  
- 
+
+
 }
 
-.container{
-    display:grid;
-    grid-template-columns: 500px 200px;
-    grid-template-rows: 500px;
-    gap:210px;
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
     align-items: center;
-   
+    min-height:100%;
+    min-width:100%;
+    padding:0px;
 }
+
 svg {
     position: relative;
     /* left: 50%;  */
     width: 100%;
     height: 20%;
-    font-family:Arial, Helvetica, sans-serif; 
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 svg text {
     font-size: 15em;
     font-weight: 700;
-    animation: stroke  5s forwards;
-    color:rgb(255, 255, 255);
-   
+    animation: stroke 5s forwards;
+    color: rgb(255, 255, 255);
+
 }
+
 @keyframes stroke {
     0% {
         fill: rgba(0, 5, 5, 0);
@@ -71,15 +77,18 @@ svg text {
         stroke-dashoffset: 25%;
         stroke-dasharray: 0 50%;
     }
+
     70% {
         fill: rgba(56, 82, 79, 0);
         stroke: rgb(254, 254, 255);
     }
+
     80% {
         fill: rgba(56, 82, 79, 0);
         stroke: rgba(54, 95, 160, 1);
         stroke-width: 3;
     }
+
     100% {
         fill: white;
         stroke: rgb(251, 251, 251);
@@ -89,63 +98,74 @@ svg text {
     }
 }
 
-li{
+li {
     list-style: none;
     width: 120px;
-    margin-top:5%;
+    margin-top: 5%;
     width: 100%;
+
+}
+
+li a {
+    color: black;
+    font-style: none;
+    font-size: 1.3em;
+    transition: transform 3s;
     
 }
-li a{
-    color: white;
-    font-style: none;
-    font-size:1.3em;
-    transition: ease-out;
-}
-li a:hover{
-    transition: transform 3s;
+
+li a:hover {
     transform: scale(1.2);
     color: cyan;
 }
 
-aside h1{
+aside h1 {
     font-size: 2em;
     margin-bottom: 10px;
 }
 
-nav img{
-    width: 48px;
-    height: 48px;
+nav img {
+    width: 120px;
+    height: 120px;
 }
 
-footer{
+footer {
     /* position: absolute; */
-    bottom:80px;
+    bottom: 80px;
     right: 250px;
     position: inherit;
 }
 
-article{
+article {
     text-align: justify;
-    
+    width:60%;
+}
+aside {
+    width:35%;
+    min-height: 80vh;
+    padding-left: 20px;
+    margin-left: 5%;
+    background-color: #FCFFB1;
 }
 
-article h1{
+article h1 {
     margin-bottom: 20px;
     text-transform: uppercase;
 }
 
-article p{
+article p {
     margin-bottom: 10px;
 }
 
-.linksite{
+.linksite {
     color: white;
 }
-.linksite:hover{
+
+.linksite:hover {
     color: cyan;
 }
-li:hover{
+
+li:hover {
     transition: transform 1.5s;
     transform: scale(1.4);
 }
