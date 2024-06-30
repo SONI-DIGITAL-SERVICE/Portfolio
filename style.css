@@ -24,7 +24,7 @@ main {
     padding: 3%;
     border-radius: 20px;
     border: none;
-    box-shadow:;
+    /* box-shadow:; */
 }
 
 main.rotate {
