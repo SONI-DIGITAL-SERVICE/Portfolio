@@ -13,18 +13,19 @@ body {
     justify-content: center;
     align-items: center;
     color: white;
-    background-image: url(images/abstrait-numerique-grille-fond-noir.jpg);
-    background-size: cover;
+    background-image: linear-gradient( to right top,#1e6091, #008fba, #00bdb5, #00e482,#ccff33 );
+    
 }
 
 main {
     width: 70vw;
     height: 80vh;
     background-color: rgba(255, 255, 255, 0.3);
-    padding: 3%;
+    padding: 0 0 3% 3%;
     border-radius: 20px;
     border: none;
     /* box-shadow:; */
+    overflow: hidden;
 }
 
 main.rotate {
@@ -33,14 +34,13 @@ main.rotate {
 }
 
 nav {
-    width: 65vw;
+    width: 100vw;
     display: flex;
     justify-content: space-between;
     position: absolute;
-    /* top:-35px; */
+    top:0;
+    background-color: transparent;
     /* margin-bottom: 50px; */
-
-
 }
 
 .container {
@@ -110,12 +110,12 @@ li a {
     color: black;
     font-style: none;
     font-size: 1.3em;
-    transition: transform 3s;
+    /* transition: transform 2s; */
     
 }
 
 li a:hover {
-    transform: scale(1.2);
+    /* transform: scale(1.1); */
     color: cyan;
 }
 
@@ -125,15 +125,15 @@ aside h1 {
 }
 
 nav img {
-    width: 120px;
-    height: 120px;
+    width: 50px;
+    height: 50px;
 }
 
 footer {
-    /* position: absolute; */
-    bottom: 80px;
-    right: 250px;
-    position: inherit;
+    position: absolute;
+    bottom: 20px;
+    left: 250px;
+   
 }
 
 article {
@@ -141,8 +141,8 @@ article {
     width:60%;
 }
 aside {
-    width:35%;
-    min-height: 80vh;
+    width:40%;
+    min-height: 100vh;
     padding-left: 20px;
     margin-left: 5%;
     background-color: #FCFFB1;
@@ -166,6 +166,6 @@ article p {
 }
 
 li:hover {
-    transition: transform 1.5s;
-    transform: scale(1.4);
+    transition: transform 1s;
+    transform: scale(1.2);
 }
